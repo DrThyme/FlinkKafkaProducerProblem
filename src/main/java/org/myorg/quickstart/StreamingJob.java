@@ -51,7 +51,7 @@ public class StreamingJob {
 		env.getCheckpointConfig().setMinPauseBetweenCheckpoints(5000);
 
 		Properties consumerProperties = new Properties();
-		consumerProperties.setProperty("bootstrap.servers", "172.16.60.24:9092,172.16.60.5:9092");
+		consumerProperties.setProperty("bootstrap.servers", "IP_GOES_HERE");
 		consumerProperties.setProperty("isolation.level", "read_committed");
 		consumerProperties.setProperty("group.id", "flink-tester-tim");
 
@@ -61,7 +61,7 @@ public class StreamingJob {
 		kafkaConsumer.setStartFromEarliest();
 
 		Properties producerProperties = new Properties();
-		producerProperties.setProperty("bootstrap.servers", "172.16.60.24:9092,172.16.60.5:9092");
+		producerProperties.setProperty("bootstrap.servers", "IP_GOES_HERE");
 
 		FlinkKafkaProducer<ObjectNode> kafkaProducer = new FlinkKafkaProducer<ObjectNode>(
 				"enrichedPlayerSessionsTest",
