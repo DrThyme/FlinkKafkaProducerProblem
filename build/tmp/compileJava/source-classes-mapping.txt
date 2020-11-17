@@ -1,0 +1,8 @@
+org/myorg/quickstart/BatchJob.java
+ org.myorg.quickstart.BatchJob
+org/myorg/quickstart/KafkaJsonDeserializer.java
+ org.myorg.quickstart.KafkaJsonDeserializer
+org/myorg/quickstart/KafkaJsonSerialize.java
+ org.myorg.quickstart.KafkaJsonSerialize
+org/myorg/quickstart/StreamingJob.java
+ org.myorg.quickstart.StreamingJob
